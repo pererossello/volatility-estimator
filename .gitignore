@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Virtual envs
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Cache / logs
+.mypy_cache/
+.pytest_cache/
+.ruff_cache/
+*.log
+
+# Data (adjust if you intentionally want to version data)
+data/
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+
+# JAX compiled cache (if any custom path)
+jax_cache/
+
+# Secrets / credentials
+.env
+.env.*
+!env.example
+
