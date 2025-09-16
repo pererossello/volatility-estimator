@@ -107,36 +107,6 @@ Where `f'(sigma_n)` (Vega) is obtained automatically via JAX. Convergence is typ
 
 ---
 
-## Roadmap / TODO (Non-Exhaustive)
-* [ ] Add analytic Vega for cross‑validation of autodiff result
-* [ ] Implement robust fallback solver (Brent) when Newton fails
-* [ ] Batch implied vol computation over entire option chain (vectorized JAX)
-* [ ] Basic volatility surface interpolation / smoothing
-* [ ] Unit tests (pytest) + CI workflow
-* [ ] Packaging (`pyproject.toml`) and pinned requirements
-* [ ] Logging + structured error handling
-* [ ] Performance comparison: autodiff vs analytic Vega
-
----
-
-## Limitations / Caveats
-* Educational only; not production‑grade
-* No guarantees on data quality from `yfinance`
-* Ignores transaction costs, discrete dividends, stochastic rates, etc.
-* Numerical issues may appear for near‑expiry or deeply OTM options
-
----
-
-## Contributing
-Currently closed while structure stabilizes. Feel free to open an issue with suggestions; PR guidelines will follow once the project matures.
-
----
-
-## License
-No explicit license yet (defaults to “all rights reserved”). This will change—do not rely on this code for commercial use.
-
----
-
 ## References
 * Black & Scholes (1973) – The Pricing of Options and Corporate Liabilities
 * JAX Documentation – https://github.com/google/jax
